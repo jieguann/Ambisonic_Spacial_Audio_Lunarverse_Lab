@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-7902626547444725490
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: be5fa420bf4b5a44d83189bb0c1aedd5
+  m_EffectName: Attenuation
+  m_MixLevel: 2041da3feb6b1c645a67a443645a1ead
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-7130714248571891384
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Group
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1f3ec91642a8a16418e8324816c8c2cc
+  m_Children: []
+  m_Volume: 41d34dc0c51174f4d96edd0a60b02925
+  m_Pitch: e62f6addd805b65438a800ba422cd397
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -7902626547444725490}
+  - {fileID: 4207525758594670128}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-3931138121889627759
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: c2cad9fbfefc9dd47907ed8afdfdeea3
+  m_EffectName: Q3DAudioObjectOut
+  m_MixLevel: 081b5fd9520547545b9933ca09d6b0d9
+  m_Parameters:
+  - m_ParameterName: Gain
+    m_GUID: df78c1a5d8a028d408c3e80b9cfa8c04
+  - m_ParameterName: TimeAdjust
+    m_GUID: d860ac58dd28fe842bd3c2b0c48c523d
+  - m_ParameterName: BrightAdjust
+    m_GUID: db4a0cf3f3babff4db53501d358e0cab
+  - m_ParameterName: WetMix
+    m_GUID: 30b3c23abc2faef43b029e9521bdbe85
+  - m_ParameterName: RoomDimensionsX
+    m_GUID: b22745ea7f720d24e9df74d0a71226b2
+  - m_ParameterName: RoomDimensionsY
+    m_GUID: 1d48010ce73daff42af71820172eee59
+  - m_ParameterName: RoomDimensionsZ
+    m_GUID: 6ad52963cb27e9e438125ddf16d21bdc
+  - m_ParameterName: RoomMatWalls
+    m_GUID: c1f3f5138cd5e3247ac531f53a9ce55a
+  - m_ParameterName: RoomMatCeiling
+    m_GUID: 3d4aa087d5723964fa0bd56e719e6729
+  - m_ParameterName: RoomMatFloor
+    m_GUID: 5e3d50190dafc4346a6e273c131e67d7
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: test
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - b1edc38bea191374eb291013693fef54
+    - 1f3ec91642a8a16418e8324816c8c2cc
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: b1edc38bea191374eb291013693fef54
+  m_Children:
+  - {fileID: -7130714248571891384}
+  m_Volume: 7322923932a7312489b8e0b46d3dea1d
+  m_Pitch: f7309eb35f3685142b216f1afdfb2f73
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: -3931138121889627759}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: da463b095e8882248a3b525242a0f627
+  m_EffectName: Attenuation
+  m_MixLevel: 068a2392a77fe10438a83c7f71affaa2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: ba456f71ff2d35a418a45ed562c5f432
+  m_FloatValues:
+    7322923932a7312489b8e0b46d3dea1d: 0.8772599
+  m_TransitionOverrides: {}
+--- !u!244 &4207525758594670128
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0e7f5e61704d50344b1d4fdcaabad00a
+  m_EffectName: Q3DAudioSoundFieldOut
+  m_MixLevel: e9548e8db026d2040b015159ff71803d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
